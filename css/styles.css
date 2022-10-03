@@ -1,10 +1,58 @@
+@keyframes color {
+  0% {
+    background: #33CCCC;
+  }
+
+  20% {
+    background: #33CC36;
+  }
+
+  40% {
+    background: #B8CC33;
+  }
+
+  60% {
+    background: #FCCA00;
+  }
+
+  80% {
+    background: #33CC36;
+  }
+
+  100% {
+    background: #33CCCC;
+  }
+}
+
+@keyframes moving {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  50% {
+    left: 0;
+    top: 400;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
 body {
-    background-color: #FF9500;
-  }
-  
-  h1 {
-    color: #00539F;
-  }
-  
-  
-  
+  background-color: #33CCCC;
+  animation: color 15s infinite linear;
+}
+
+.jos {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  animation: moving 5s infinite linear;
+  position: relative;
+  background-color: black;
+}
+
+h1,p,a{ text-align: center;}
